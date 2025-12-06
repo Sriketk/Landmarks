@@ -10,6 +10,9 @@ import SwiftUI
 struct CircleImage: View {
     var body: some View {
         Image("cobalt3")
+            .frame( width:300, height:300)
+        
+        
             .clipShape(Circle())
             .overlay{
                 Circle().stroke(.white, lineWidth:1)
