@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A55C82602EE3EF8F004E2CAF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C825F2EE3EF8F004E2CAF /* CircleImage.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A55C82432EE3DF87004E2CAF /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55C825F2EE3EF8F004E2CAF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		A55C823A2EE3DF87004E2CAF = {
 			isa = PBXGroup;
 			children = (
+				A55C825F2EE3EF8F004E2CAF /* CircleImage.swift */,
 				A55C82452EE3DF87004E2CAF /* Landmarks */,
 				A55C82442EE3DF87004E2CAF /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55C82602EE3EF8F004E2CAF /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
