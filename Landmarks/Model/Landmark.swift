@@ -22,7 +22,7 @@ struct Landmark: Hashable, Codable, Identifiable{
     
     private var imageName: String
     
-    var isFavorite: Bool 
+    var isFavorite: Bool = false
 
     var image: Image {
         Image(imageName)
