@@ -5,11 +5,11 @@
 //  Created by Sriket Komali on 12/6/25.
 //
 
+import CoreLocation
 import Foundation
 import SwiftUI
-import CoreLocation
 
-struct Landmark: Hashable, Codable, Identifiable{
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
 
     var name: String
@@ -19,26 +19,40 @@ struct Landmark: Hashable, Codable, Identifiable{
     var state: String
 
     var description: String
-    
+
     private var imageName: String
-    
+
     var isFavorite: Bool = false
+
+    var category: Category
+
+    var isFeatured: Bool
+    
+    enum Category: String, CaseIterable, Codable {
+
+        case lakes = "Lakes"
+
+        case rivers = "Rivers"
+
+        case mountains = "Mountains"
+
+    }
 
     var image: Image {
         Image(imageName)
     }
-    
-    struct Coordinates: Hashable, Codable{
+
+    struct Coordinates: Hashable, Codable {
         var latitude: Double
         var longitude: Double
     }
     private var coordinates: Coordinates
-    
-    var locationCoordinate: CLLocationCoordinate2D{
+
+    var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
+            longitude: coordinates.longitude
+        )
     }
-    
 
 }
